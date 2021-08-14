@@ -1,0 +1,1 @@
+# Projeto realizado para desenvolver loanding com objetivo aprender e aperfeiçoar as linguagens (CSS e JavaScript)

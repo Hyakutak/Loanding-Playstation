@@ -1,0 +1,149 @@
+.container {
+    display: grid;
+    grid-template-areas: '1 2 3 4';
+    grid-gap: 10px;
+    max-width: 1100px;
+    margin: 18% auto; 
+    position: relative;  
+}
+.triangle-container {
+    grid-area: 1;
+    position:absolute;
+    fill: transparent;
+    stroke: green;
+    stroke-width: 8;
+    transform-origin: 250px 250px;
+    animation: triangle 2.5s ease-in-out infinite;
+}
+.circle {
+    grid-area: 2;
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    border-radius: 50%;
+    border: 10px solid red;
+    animation: circle 2.5s ease-in-out infinite;
+}
+.x {
+    grid-area: 3;
+    color: #0072ce;
+    font-family: sans-serif;
+    font-size: 210px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    position:absolute;
+    animation: x 2.5s ease-in-out infinite;
+}
+.square {
+    grid-area: 4;
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    border: 10px solid #FF69B4;
+    animation: square 2.5s ease-in-out infinite;
+}
+@keyframes circle {
+    0% {
+        border-color: red;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: red;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: red;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: red;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: red;
+        transform: scale(1);
+    }
+}
+@keyframes square {
+    0% {
+        border-color: #FF69B4;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: #FF69B4;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: #FF69B4;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: #FF69B4;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: #FF69B4;
+        transform: scale(1);
+    }
+}
+@keyframes x {
+    0% {
+        border-color: #0072ce;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: #0072ce;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: #0072ce;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: #0072ce;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: #0072ce;
+        transform: scale(1);
+    }
+}
+@keyframes triangle {
+    0% {
+        border-color: green;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: green;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: green;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: green;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: green;
+        transform: scale(1);
+    }
+}
