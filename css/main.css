@@ -1,45 +1,35 @@
 .container {
-    display: grid;
-    grid-template-areas: '1 2 3 4';
-    grid-gap: 10px;
     max-width: 1100px;
-    margin: 18% auto; 
-    position: relative;  
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
 }
-.triangle-container {
-    grid-area: 1;
-    position:absolute;
+.container .triangle-container {
     fill: transparent;
     stroke: green;
     stroke-width: 8;
     transform-origin: 250px 250px;
     animation: triangle 2.5s ease-in-out infinite;
 }
-.circle {
-    grid-area: 2;
+.container .circle {
     width: 150px;
     height: 150px;
-    position:absolute;
     border-radius: 50%;
     border: 10px solid red;
     animation: circle 2.5s ease-in-out infinite;
 }
-.x {
-    grid-area: 3;
+.container .x {
     color: #0072ce;
     font-family: sans-serif;
     font-size: 210px;
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    position:absolute;
     animation: x 2.5s ease-in-out infinite;
 }
-.square {
-    grid-area: 4;
+.container .square {
     width: 150px;
     height: 150px;
-    position:absolute;
     border: 10px solid #FF69B4;
     animation: square 2.5s ease-in-out infinite;
 }
